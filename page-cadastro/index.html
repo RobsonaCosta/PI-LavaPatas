@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAVA PATAS - Cadastro</title>
+</head>
+
+<link rel="stylesheet" href="index.html">
+
+<link rel="stylesheet" href="css/global.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+    <img id="img_fundo" src="assets/LAVANDO_PATAS-0.png" alt="lava patas">
+
+    <header class="topo">
+        <nav>
+            <div id="logo">
+
+                <img src="assets/LAVANDO_PATAS__1_.png" alt="logo">
+
+            </div>        
+        </nav>       
+    </header>
+
+    <main>
+        <div class="box">
+            <form action="">
+                <fieldset>
+
+                    <legend><b>Cadastro Lava Patas</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome Cliente</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="nomePet" id="nomePet" class="inputUser" required>
+                        <label for="nomePet" class="labelInput">Nome Pet</label>
+                    </div>     
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">e-mail</label>
+                    </div> 
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput">Telefone</label>
+                    </div>
+                    <br><br>
+                    <label for="data_agendamento">Agendamento</label>
+                    <input type="date" nome="data_agendamento" id="data_agendamento" required>
+                    <br><br>
+                    <label for="horario">Selecione o horário</label>
+                    <select id="horario">  
+                        <option value="none">      </option>                        
+                        <option value="07:00">08:00</option>
+                        <option value="08:00">09:00</option>
+                        <option value="09:00">10:00</option>
+                        <option value="10:00">11:00</option>
+                        <option value="12:00">13:00</option>
+                        <option value="13:00">14:00</option>
+                        <option value="14:00">15:00</option>
+                        <option value="15:00">16:00</option>      
+                    </select>
+                    <br><br>
+                    <input type="submit" nome="submit" id="submit" value="Agendar">   
+                    
+                </fieldset>              
+            </form>
+        </div>        
+    </main>
+</body>
+</html>
